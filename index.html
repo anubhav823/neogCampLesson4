@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 4</title>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form>
-      <textarea id="textarea-ex4" name="textarea"></textarea>
-      <textarea id="textarea-ex4-1" name="textarea"></textarea>
-      <button id="button-ex4">Click me</button>
-      <button id="reset" type="reset">Reset</button>
-    </form>
+    <nav class="navigation container">
+      <div class="nav-brand">Translators</div>
+    </nav>
+    <div class="main">
+      <textarea
+        id="textarea-ex4"
+        placeholder="Enter the text you want to be translated"></textarea>
+      <div class="buttons-flex">
+        <button id="button-yoda" class="button-primary">Translate into Yoda</button>
+        <button id="button-minionese" class="button-secondary">Translate into Minionese</button>
+        <button id="button-vulcan" class="button-primary">Translate into Vulcan</button>
+        <button id="button-dothraki" class="button-secondary">Translate into Dothraki</button>
+      </div>
+      <div id="outputtextarea">
+        <p style="color:grey">Translated text will appear here</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>This is a translator app made by me for lesson 4, levelZero</p>
+    </footer>
   </body>
 </html>

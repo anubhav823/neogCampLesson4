@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #f2c94c;
+  --black: #333333;
+  --width-break: 600px;
+}
+body {
+  font-family: "DynoPuff", cursive;
+  color: #333333;
+  margin: 0;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+button {
+  width: 9rem;
+  height: 4rem;
+  box-shadow: none;
+  margin: 30px;
+}
+.button-primary {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  font-family: inherit;
+}
+.button-primary:active {
+  background-color: #b91c1c;
+}
+.button-secondary {
+  border: solid 0.5px #ef4444;
+  background-color: white;
+  color: #ef4444;
+  font-family: inherit;
+}
+.button-secondary:active {
+  background-color: gainsboro;
+}
+.buttons-flex {
+  display: flex;
+}
+#textarea-ex4 {
+  box-sizing: border-box;
+  width: var(--width-break);
+  min-height: 10vh;
+  max-height: 20vh;
+  overflow: scroll;
+  border: 1px solid var(--black);
+  font-family: inherit;
+  padding: 10px;
+}
+#outputtextarea {
+  box-sizing: border-box;
+  min-height: 10vh;
+  max-height: 20vh;
+  overflow: scroll;
+  width: var(--width-break);
+  border: 1px solid var(--black);
+  padding: 10px;
+}
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 1rem;
+  padding: 0rem 1rem;
+}
+.nav-brand {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
